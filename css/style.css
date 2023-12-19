@@ -3,3 +3,202 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    gap: 20px;
+}
+
+.nav .logo{
+    width: 72px;
+    height: 15px;
+    background-color: #0061ff;
+    /* prova */
+}
+
+.nav .nav-links{
+
+    display: flex;
+    gap: 20px;
+}
+
+.nav .nav-links ul{
+    display: flex;
+
+    list-style-type: none;
+    gap: 20px;
+}
+
+.nav .nav-links li{
+    width: 70px;
+    height: 15px;
+    background-color: #0061ff;
+    /* prova */
+}
+
+.nav .nav-links .btn-nav{
+    background-color: #0061ff;
+    width: 40px;
+    height: 15px;
+}
+
+.hero-section{
+    width: 100%;
+    height:calc(90vh - 50px);
+    background-color: #b4d0e7;
+    padding-bottom: 90px;
+}
+
+.hero-section .big-container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0;
+    margin-bottom: 60px;
+     display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.hero-section .big-container h1{
+    width: 640px;
+    height: 108px;
+    background-color: #fff;
+    /* prova */
+    
+}
+
+.row{
+    display: flex;
+    gap:20px;
+    margin-bottom: 90px;
+}
+
+.hero-section .big-container .hero-text{
+    width: 205px;
+    height: 220px;
+    background-color: palevioletred;
+    /* prova */
+    display: flex;
+    flex-wrap: nowrap;
+    
+    
+}
+
+.hero-section .big-container .hero-img{
+    width: 445px;
+    height: 260px;
+    background-color: purple;
+
+    /* prova */
+}
+
+.main{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.main .small-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 90px;
+    gap:10px;
+}
+
+.main .small-container h2{
+    width: 100%;
+    height: 20px;
+    background-color: aqua;
+    /* prova */
+    margin-bottom: 20px;
+}
+
+.main .small-container .input-main{
+    width: 90px;
+    height: 12px;
+    background-color: blue;
+
+    /* prova */
+}
+
+.main .small-container .cards{
+    width: 170px;
+    height: 540px;
+    background-color: blue;
+    /* prova */
+}
+
+.column>*{
+    /* padding:14px 20px; */
+}
+.main .small-container .column{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.main .small-container .info{
+    width: 570px;
+    height: 145px;
+    background-color: aqua;
+    /* prova */
+    margin-bottom: 86px;
+}
+
+.main .info .title{
+    width: 570px;
+    height: 22px;
+    background-color:brown;
+    /* prova */
+}
+
+.row-main{
+    display: flex;
+    gap: 30px;
+}
+
+.main .small-container .row .main-img{
+    width: 340px;
+    height: 290px;
+    background-color: yellow;
+    /* prova */
+}
+
+.main .small-container .row .main-text{
+    width: 170px;
+    height: 170px;
+    background-color:yellowgreen;
+    /* prova */
+
+    align-self: center;
+}
+
+.main .small-container .column-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 100px;
+}
+
+.column-2 .cards-1{
+    width: 170px;
+    height: 257px;
+    background-color: blue;
+
+    /* prova */
+    padding-left: 20px;
+}
+
+.main .small-container .subtitle{
+    width: 330px;
+    height: 95px;
+    background-color: cadetblue;
+    /* prova */
+}
+
