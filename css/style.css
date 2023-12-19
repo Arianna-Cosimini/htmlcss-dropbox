@@ -42,109 +42,111 @@
     background-color: #0061ff;
     width: 40px;
     height: 15px;
+    /* prova */
 }
 
 .hero-section{
     width: 100%;
-    height:calc(90vh - 50px);
+    height:75vh;
     background-color: #b4d0e7;
     padding-bottom: 90px;
+ 
 }
 
 .hero-section .big-container{
-    width: 60%;
+    width: 1200px;
+    height: 740px;
     margin-left: auto;
     margin-right: auto;
-    padding: 60px 0;
-    margin-bottom: 60px;
-     display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    gap: 20px;
+    padding: 60px;
+
 }
 
 .hero-section .big-container h1{
-    width: 640px;
+    width: 100%;
     height: 108px;
     background-color: #fff;
     /* prova */
+
+    margin-bottom: 40px;
     
 }
 
 .row{
     display: flex;
+    justify-content: center;
     gap:20px;
-    margin-bottom: 90px;
+    padding-top: 30px;
 }
 
+
+
 .hero-section .big-container .hero-text{
-    width: 205px;
     height: 220px;
     background-color: palevioletred;
     /* prova */
     display: flex;
-    flex-wrap: nowrap;
+    flex-grow: 1;
     
     
 }
 
 .hero-section .big-container .hero-img{
-    width: 445px;
+   
     height: 260px;
     background-color: purple;
 
     /* prova */
+
+    flex-grow: 2;
 }
 
 .main{
-    width: 50%;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
 
-.main .small-container{
-    display: flex;
-    flex-wrap: wrap;
+.main {
     padding-top: 90px;
     gap:10px;
 }
 
-.main .small-container h2{
+.main h2{
     width: 100%;
     height: 20px;
     background-color: aqua;
     /* prova */
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
-.main .small-container .input-main{
+.main  .input-main{
     width: 90px;
     height: 12px;
     background-color: blue;
 
     /* prova */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
-.main .small-container .cards{
-    width: 170px;
+.main  .cards{
+    width: 100%;
     height: 540px;
     background-color: blue;
     /* prova */
 }
 
-.column>*{
-    /* padding:14px 20px; */
-}
-.main .small-container .column{
+.main  .column{
     display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+    gap: 20px;
     margin-bottom: 30px;
 }
 
-.main .small-container .info{
-    width: 570px;
+.main  .info{
+    width: 100%;
     height: 145px;
     background-color: aqua;
     /* prova */
@@ -152,25 +154,28 @@
 }
 
 .main .info .title{
-    width: 570px;
+    width: 100%;
     height: 22px;
     background-color:brown;
     /* prova */
+
 }
 
 .row-main{
     display: flex;
+    justify-content: center;
     gap: 30px;
+    margin-bottom: 90px;
 }
 
-.main .small-container .row .main-img{
+.main  .row-main .main-img{
     width: 340px;
     height: 290px;
     background-color: yellow;
     /* prova */
 }
 
-.main .small-container .row .main-text{
+.main  .row-main .main-text{
     width: 170px;
     height: 170px;
     background-color:yellowgreen;
@@ -179,15 +184,16 @@
     align-self: center;
 }
 
-.main .small-container .column-2{
+.main  .column-2{
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    justify-content: space-around;
+    gap:40px  30px;
     margin-bottom: 100px;
 }
 
 .column-2 .cards-1{
-    width: 170px;
+    width: calc(100% / 3 - 30px);
     height: 257px;
     background-color: blue;
 
@@ -195,10 +201,188 @@
     padding-left: 20px;
 }
 
-.main .small-container .subtitle{
+.main  .subtitle{
     width: 330px;
     height: 95px;
     background-color: cadetblue;
     /* prova */
+    margin-bottom: 80px;
 }
 
+.multi-container{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+    border: 3px solid black;
+}
+
+.small-square{
+    width: calc(100% / 2);
+    border: 1px solid red;
+}
+
+.square-1{
+    padding: 5px;
+    background-color: #a2d39b;
+}
+
+.square-2{
+    background-color:#61082b;
+}
+
+.square-3{
+    background-color: #0093ce;
+}
+
+.square-4{
+    background-color: #ff1c1c;
+}
+
+.square-5{
+    background-color: #d5001f;
+}
+
+.square-6{
+    background-color: #b4d0e7;
+}
+
+.square-7{
+    background-color: #0d2481;
+}
+
+.square-8{
+    background-color:#ffd830;
+}
+
+.call-to-action{
+    padding: 70px 0;
+    margin-bottom: 95px;
+  
+    background-color: #b4d0e7;
+}
+
+.action-container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.action-text{
+    width: 270px;
+    height: 70px;
+    background-color: #fff;
+
+    /* prova */
+}
+
+.action-button{
+    width: 170px;
+    height: 30px;
+    background-color: #fff;
+    /* prova */
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.question-text{
+    width: 220px;
+    height: 25px;
+    background-color: #61082b;
+    /* prova */
+    margin-bottom: 40px;
+   
+}
+
+.question-list{
+    border-top: 1px solid #bdbdbd;
+}
+.sub-list {
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 20px 0;
+
+}
+
+
+.list {
+    display: none;
+    list-style: none;
+    padding: 0;
+  }
+
+.list-item:active .list {
+    display: block;
+  }
+
+ul{
+    list-style-type: none;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+}
+
+.footer-container{
+    width: 1200px;
+    height: 570px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .footer-list{
+  
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    
+    
+
+}
+
+.footer-list ul{    
+    width: 95px;
+    height: 125px;
+    background-color: #fff;
+
+    /* prova */
+
+
+    display: flex;
+    margin-bottom: 60px;
+}
+
+footer .footer-link{
+    width: 136px;
+    border-top:1px solid white ;
+}
+
+.footer-link a{
+    width: 60px;
+    height: 15px;
+    background-color: #fff;
+    /* prova */
+
+    display: inline-block;
+    margin-top: 30px;
+   
+}
