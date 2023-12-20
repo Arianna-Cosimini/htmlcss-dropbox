@@ -8,6 +8,10 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+header{
+    padding: 30px 22px;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
