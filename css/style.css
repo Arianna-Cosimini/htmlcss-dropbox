@@ -121,22 +121,21 @@ header{
 
 
 .main h2{
-    width: 100%;
-    height: 20px;
-    background-color: aqua;
-    /* prova */
+ 
     margin-bottom: 80px;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .main  .input-main{
-    width: 90px;
-    height: 12px;
-    background-color: blue;
-
-    /* prova */
     display: flex;
-    justify-content: space-between;
     margin-bottom: 50px;
+    gap: 50px;
+}
+
+.checkbox span{
+    font-size: 15px;
+
 }
 
 .main  .column{
@@ -145,15 +144,68 @@ header{
     margin-bottom: 50px;
 }
 .main .column .cards{
-    height: 540px;
-    background-color: blue;
-    /* prova */
-
+    border: 2px solid #f3f3f4;
     width:calc(100% / 3 - 50px / 3 * 2);
 
 }
 
+.cards .title{
+    padding: 15px 0;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 2px solid #f3f3f4;
+}
 
+
+.cards .text-card{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 25px;
+}
+
+.text-card b span{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.text-card .list-card{
+    font-size: 15px;
+    margin-bottom: 55px;
+}
+
+.list-card li{
+    padding:15px 0 ;
+}
+
+.list-card .btn-card{
+    color: white;
+    text-align: center;
+}
+
+.option a {
+    padding: 0;
+    color: #7b53f0;
+    text-decoration: underline;
+}
+
+.list-card-2 strong{
+    display: inline-block;
+    margin-bottom: 35px;
+}
+
+.list-card-2 .fa-solid{
+    color: #57a1ff;
+}
+
+.option{
+    padding-bottom: 100px;
+}
+
+.text-card-2 small{
+    display: inline-block;
+    margin-bottom: 24px;
+}
 
 .main  .info{
     width: 100%;
