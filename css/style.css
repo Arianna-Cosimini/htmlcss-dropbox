@@ -50,12 +50,12 @@ header{
 }
 
 .btn{
-    background-color: #0061ff;
+    /* background-color: #0061ff; */
 }
  a{
     display: inline-block;
     padding: 10px 15px;
-
+    background-color: #0061ff;
     color: white;
     text-decoration: none;
 }
@@ -138,16 +138,41 @@ header{
     gap: 50px;
 }
 
-.checkbox span{
-    font-size: 15px;
-
+.checkbox input[type="radio"] {
+    display: none; 
 }
 
-.main  .column{
+.checkbox label {
+    position: relative;
+     padding-left: 30px;
+    cursor: pointer;
+}
+
+.checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid rgba(42,122,255,255);
+    background-color: white; 
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.checkbox input[type="radio"]:checked + label:before {
+    background-color: white; 
+    border: 6px solid #2a7aff;
+}
+
+
+.main .column{
     display: flex;
     gap: 50px;
     margin-bottom: 50px;
 }
+
 .main .column .cards{
     border: 2px solid #f3f3f4;
     width:calc(100% / 3 - 50px / 3 * 2);
@@ -180,7 +205,10 @@ header{
 }
 
 .list-card li{
+    display: flex;
     padding:15px 0 ;
+    align-items: first baseline;
+    gap: 6px;
 }
 
 .list-card .btn-card{
@@ -204,7 +232,17 @@ header{
 }
 
 .option{
-    padding-bottom: 100px;
+    margin-bottom: 40px;
+}
+
+.option a{
+    background-color: transparent;
+}
+
+.text-card hr{
+    color: #f3f3f4;
+    width: 50px;
+    margin-bottom: 50px;
 }
 
 .text-card-2 small{
@@ -226,16 +264,11 @@ header{
 
 }
 
-.info .enterprise{
-    position: relative;
-    padding: 40px 30px;
-    
-}
-
-.enterprise .btn{
-    position: absolute;
-    top: 40px;
-    right: 30px;
+.enterprise{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
 }
 
 .enterprise .info-text{
@@ -243,6 +276,10 @@ header{
     flex-direction: column;
     margin-bottom: 60px;
     gap: 30px;
+}
+
+.info-text .btn{
+    align-self: flex-start;
 }
 
 .row-main{
@@ -286,6 +323,7 @@ header{
 
 .btn-main-text a{
     color: black;
+    background-color: transparent;
 }
 
 .main  .column-2{
@@ -316,6 +354,7 @@ header{
 
 .subtitle a{
     color: #7b53f0;
+    background-color: transparent;
     text-decoration: underline;
     padding: 0;
 }
@@ -336,24 +375,34 @@ header{
 .small-square{
     width: calc(100% / 2);
     position: relative;
+
+    transition: border-width .5s ease;
+
+    border: 0px solid rgba(255, 255, 255, 0.5);
     
 }
 
+.container .small-square:active,
+.container .small-square:hover{
+
+    border-width: 16px;
+}
+
 svg{
+    width: 50%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
 }
-.small-square img{
-    fill: white;
-    width: 100%;
 
+path{
+    fill: white;
 }
+
 
 .square-1{
     background-color: #a2d39b;
-    box-shadow: inset 0 0 0 15px #d1e9cd;
 }
 
 .square-2{
@@ -384,27 +433,28 @@ svg{
     background-color:#ffd830;
 }
 .center{
-    padding: 50px 50px 0 50px;
-}
-
-.logo-center{
-    margin-bottom: 95px;
-    z-index: 1;
-}
-
-.center img{
-    width: 100%;
-   
-}
-
-.center-text{
-    max-height: 300px;
+    padding: 48px;
+    height: 100%;
     overflow: auto;
 }
 
-.center p{
+
+.center img{
+    margin-bottom: 42px;
+    width: 50%;
+   
+}
+
+
+
+ p{
+    font-size: 12px;
     font-family: 'open-sans';
+}
+
+.center p{
     margin-bottom: 60px;
+    
 }
 
 .bottom-center{
@@ -413,6 +463,15 @@ svg{
     height: 50px;
     z-index: 1;
 }
+
+
+
+
+
+
+
+
+
 
 .call-to-action{
     padding: 150px 0;
@@ -502,7 +561,13 @@ ul{
     font-family: 'FontAwesome';
     position: absolute;
     right: 50px;
+    top: 0;
 }
+
+.list-item:hover  .list-item::after{
+    transform: rotate (180deg);
+}
+
 
 footer{
     width: 100%;
@@ -544,12 +609,9 @@ footer .footer-link{
 }
 
 .footer-link a{
-   
+    background-color: transparent;
     display: inline-block;
     margin-top: 30px;
    
 }
 
-path{
-    fill: white;
-}
