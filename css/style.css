@@ -25,9 +25,6 @@ header{
    
 }
 
-.nav .logo{
-
-}
 
 .nav .nav-links{
 
@@ -45,12 +42,10 @@ header{
     gap: 20px;
 }
 
-.nav .nav-links li{
-  /
-}
 
-.btn{
-    /* background-color: #0061ff; */
+
+.btn:hover >*{
+    background-color: rgba(19, 19, 88, 0.772);
 }
  a{
     display: inline-block;
@@ -240,7 +235,7 @@ header{
 }
 
 .text-card hr{
-    color: #f3f3f4;
+    border: 1px solid #f3f3f4;
     width: 50px;
     margin-bottom: 50px;
 }
@@ -602,16 +597,23 @@ footer .footer-list{
     display: inline-block;
     margin-bottom: 40px;
 }
-footer .footer-link{
-    border-top:1px solid white ;
+
+.footer-container hr{
+    width: 130px;
+    border: 1px solid white;
+}
+
+.footer-link{
     color: white;
-    padding-bottom: 50px;
+    font-size: 12px;
+    padding-bottom: 45px;
 }
 
 .footer-link a{
     background-color: transparent;
     display: inline-block;
     margin-top: 30px;
+    font-size: 12px;
    
 }
 
