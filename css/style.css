@@ -6,11 +6,20 @@
 strong{
     font-size: 15px;
 }
-p{
-    font-size: 12px;
+
+
+.btn{
+    font-size: 15px;
+}
+.btn:hover >*{
+    background-color: rgba(19, 19, 88, 0.772);
 }
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+p{
+    font-size: 16px;
 }
 
 header{
@@ -42,17 +51,27 @@ header{
     gap: 20px;
 }
 
-
-
-.btn:hover >*{
-    background-color: rgba(19, 19, 88, 0.772);
+.nav-links ul a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: #61082b;
 }
- a{
+
+.nav-links ul li a{
+    background-color: transparent;
+    padding: 0;
+    color: black;
+}
+ a{ 
+
     display: inline-block;
     padding: 10px 15px;
     background-color: #0061ff;
     color: white;
     text-decoration: none;
+    font-family: 'open-sans'sans-serif;
+    font-size: 15px;
+    white-space: nowrap;
 }
 
 .hero-section{
@@ -100,7 +119,7 @@ header{
 
 
 .hero-text .fa-solid{
-    margin-top: 80px;
+    margin-top: 60px;
     font-size: 48px;
 }
 
@@ -189,9 +208,29 @@ header{
     gap: 25px;
 }
 
-.text-card b span{
+.text-card .pricing{
+    display: flex;
+    flex-flow: column;
+
+    margin-bottom: 54px;
+}
+
+.pricing h3 {
+    margin-bottom: 24px;
+}
+
+.pricing strong {
+    margin-bottom: 20px;
+}
+
+.pricing span {
+    color: gray;
     font-size: 10px;
     font-weight: 400;
+}
+
+.text-card.text-card-2 strong{
+    margin-bottom: 31px;
 }
 
 .text-card .list-card{
@@ -306,14 +345,12 @@ header{
 
 .row-main .main-text p{
     font-weight: 400;
-    font-size: 12px;
 }
 
 .main-text .btn-main-text{
     display: inline-block;
     background-color: transparent;
     border: 1px solid black;
-    font-size: 12px;
 }
 
 .btn-main-text a{
@@ -355,7 +392,7 @@ header{
 }
 
 .multi-container{
-    height: calc(100vw / 3);
+   
     display: flex;
     position: relative;
     background-color: #f5f5f5;
@@ -365,21 +402,24 @@ header{
     display: flex;
     flex-wrap: wrap;
     width: calc(100% / 3);
+    height: calc(100vw / 3);
 }
 
 .small-square{
-    width: calc(100% / 2);
+    /* width: calc(100% / 2); */
+    width: 50%;
+    height: 50%;
     position: relative;
 
     transition: border-width .5s ease;
 
     border: 0px solid rgba(255, 255, 255, 0.5);
+  
     
 }
 
-.container .small-square:active,
-.container .small-square:hover{
-
+.container .small-square:active{
+    
     border-width: 16px;
 }
 
@@ -406,6 +446,15 @@ path{
 
 .square-3{
     background-color: #0093ce;
+}
+
+.small-square.square-3 img{
+    width: 50%;
+    filter: invert(1);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
 }
 
 .square-4{
@@ -442,21 +491,15 @@ path{
 
 
 
- p{
-    font-size: 12px;
-    font-family: 'open-sans';
-}
+
 
 .center p{
     margin-bottom: 60px;
     
 }
 
-.bottom-center{
-    background-color:  #f5f5f5;
-    width: 100%;
-    height: 50px;
-    z-index: 1;
+figcaption{
+    font-size: 12px;
 }
 
 
@@ -482,8 +525,7 @@ path{
     position: relative;
 }
 
-.action-text strong{
-    font-size: 20px;
+.action-text h2{
     color: #661430;
 
 }
@@ -497,7 +539,6 @@ path{
 
 .action-button a{
     color: black;
-    font-size: 12px;
 }
 
 
@@ -531,16 +572,19 @@ path{
 
 
 .list {
-    display: none;
+    opacity: 0;
+    height: 0;
     list-style: none;
     padding: 0;
+    overflow: hidden;
+    transition:  opacity 0.3s ease, height 0.3s ease ;
   }
 
 .list-item:hover .list {
-    display: block;
+    opacity: 1;
+    height: auto;
     margin-top: 20px;
-    padding-left: 40px;
-    list-style-type: circle;
+    
   }
 
 ul{
@@ -551,18 +595,16 @@ ul{
     position: relative;
 }
 
-.list-item::after{
-    content: '\f078';
-    font-family: 'FontAwesome';
+.list-item .fa-solid{
+   
+   
     position: absolute;
     right: 50px;
     top: 0;
 }
-
-.list-item:hover  .list-item::after{
-    transform: rotate (180deg);
+.list-item:hover .fa-solid{
+    transform: rotate(180deg);
 }
-
 
 footer{
     width: 100%;
